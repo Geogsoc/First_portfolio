@@ -2,7 +2,7 @@
 
 # dependencies
 node_modules
-/.pnp
+/.pnpgit sta
 .pnp.js
 
 # testing
