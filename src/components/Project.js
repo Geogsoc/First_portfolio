@@ -27,11 +27,11 @@ export default function Project() {
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome, please take a look
         </h2>
-        <section className="grid lg:grid-cols-2 gap-8">
+        <section className="grid lg:grid-cols-2 gap-8 justify-center">
           {projectData &&
             projectData.map((project, index) => (
               <article
-                className="relative rounded-lg shadown-xl bg-white p-16"
+                className="relative rounded-lg shadow-xl bg-white p-4 lg:p-8"
                 key={index}
               >
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
@@ -57,7 +57,7 @@ export default function Project() {
                     <strong className="font-bold">Type</strong>{" "}
                     {project.projectType}
                   </span>
-                  <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                  <p className="my-6 text-sm lg:text-xl text-gray-700 leading-relaxed">
                     {project.description}
                   </p>
                   <a
