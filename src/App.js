@@ -1,8 +1,24 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import SinglePost from "./components/SinglePost";
+import Post from "./components/Post";
+import Project from "./components/Project";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <h1 className="text-6xl font-bold underline">Hello world!</h1>;
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route element={<Home />} path="/" exact={true} />
+        <Route element={<About />} path="/about" />
+        <Route element={<SinglePost />} path="/post/:slug" />
+        <Route element={<Post />} path="/post" />
+        <Route element={<Project />} path="/project" />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
