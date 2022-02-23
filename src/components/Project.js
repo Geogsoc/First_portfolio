@@ -38,8 +38,8 @@ export default function Project() {
                   <a
                     href={project.link}
                     alt={project.title}
-                    target="blank"
-                    rel="noopener norefferer"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {project.title}
                   </a>
@@ -62,8 +62,8 @@ export default function Project() {
                   </p>
                   <a
                     href={project.link}
-                    rel="noopener norefferer"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-red-500 font-bold hover:underline hover:text-red-400"
                   >
                     View The Project{" "}
